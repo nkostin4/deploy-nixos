@@ -108,7 +108,7 @@
     sxiv
     scrot
     # wallpaper and compositor
-    xwallpaper
+    nitrogen # xwallpaper don't work for some reason
     picom
     # consoom media
     mpv
