@@ -71,9 +71,15 @@
   environment.systemPackages = with pkgs; [
     # suckless dwm
     (dwm.overrideAttrs (oldAttrs: rec {
-      src = fetchTarball {
-        url = "https://github.com/nkostin4/dwm/archive/master.tar.gz";
+      src = fetchFromGitHub {
+        owner = "nkostin4";
+        repo = "dwm";
+        rev = "0d310e866e1b31686ebe001b674abe5fb2131682";
+        sha256 = "0a2rm82ns48v8svg5ba4a1fscfnhz1v656pbs1azsjxa7fzswvn3";
       };
+      # src = fetchTarball {
+        # url = "https://github.com/nkostin4/dwm/archive/master.tar.gz";
+      # };
     }))
     # suckless slstatus
     slstatus
