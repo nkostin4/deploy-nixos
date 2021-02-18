@@ -110,6 +110,8 @@
     # wallpaper and compositor
     xwallpaper
     picom
+    # consoom media
+    mpv
     # music player daemon and client
     mpd
     ncmpcpp
