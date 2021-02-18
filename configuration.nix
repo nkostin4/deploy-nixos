@@ -103,6 +103,7 @@
     picom
     # consoom media
     alsaUtils
+    pavucontrol
     mpv
     # music player daemon and client
     mpd
