@@ -76,18 +76,9 @@
       };
     }))
     # suckless slstatus
-    (slstatus.overrideAttrs (oldAttrs: rec {
-      src = fetchTarball {
-        url = "https://github.com/nkostin4/slstatus/archive/master.tar.gz";
-      };
-    }))
+    slstatus
     # suckless dmenu
-    # dmenu
-    (dmenu.overrideAttrs (oldAttrs: rec {
-      src = fetchTarball {
-        url = "https://github.com/nkostin4/dmenu/archive/master.tar.gz";
-      };
-    }))
+    dmenu
     # transfer and fetch files
     wget
     curl
@@ -111,6 +102,7 @@
     nitrogen # xwallpaper don't work for some reason
     picom
     # consoom media
+    alsaUtils
     mpv
     # music player daemon and client
     mpd
